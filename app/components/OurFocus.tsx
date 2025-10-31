@@ -1,5 +1,4 @@
-import React from 'react'
-import focusImg from '../assets/focus.jpg'
+
 
 const OurFocus = () => {
     const focusItems = [
