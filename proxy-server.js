@@ -12,7 +12,6 @@ const SCRIPT_URL =
 // simple POST route that relays the data
 app.post("/submit", async (req, res) => {
   try {
-    console.log('Received from frontend:', req.body)
     const response = await fetch(SCRIPT_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },

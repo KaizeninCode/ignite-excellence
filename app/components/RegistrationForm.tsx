@@ -19,7 +19,7 @@ const RegistrationForm = () => {
     setStatus("Submitting...");
 
     try {
-      const res = await fetch("http://localhost:5000/submit", {
+      const res = await fetch("https://ignite-excellence.onrender.com/submit", {
         method: "POST",
         body: JSON.stringify(formState),
         headers: {
