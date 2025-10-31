@@ -21,11 +21,13 @@ app.post("/submit", async (req, res) => {
     const data = await response.json();
     res.json(data);
   } catch (error) {
-    console.error('Prxy Error:', error);
+    console.error("Prxy Error:", error);
     res.status(500).json({ error: "Failed to forward request" });
   }
 });
 
 // start server
-const PORT = 5000;
-app.listen(PORT, () => console.log(`Proxy running on http://localhost:${PORT}`));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, "0.0.0.0", () =>
+  console.log(`Proxy running on http://0.0.0.0:${PORT}`)
+);
