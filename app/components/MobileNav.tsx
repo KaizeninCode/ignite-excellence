@@ -18,7 +18,7 @@ const MobileNav = () => {
     <header className="py-4 w-full flex justify-between items-center lg:hidden shadow-xl">
       <div className="flex justify-between w-full items-center">
         <img
-          src="/ignite-nobg.png"
+          src="/ignite-nobg-new.png"
           alt="IGNITE&reg; Excellence Logo"
           className="w-12 h-8"
         />
