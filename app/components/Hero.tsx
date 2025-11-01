@@ -2,29 +2,30 @@ import Header from "./Header";
 
 const Hero = () => {
   return (
-    <>
-      <Header />
-      <section className="bg-linear-to-l from-[#b3001b] via-red-500/90 to-[#b3001b] text-[#F4FEC1] py-20 px-4 text-center">
-        <h1 className="text-6xl font-bold text-center">
-          IGNITE&reg; Excellence
-        </h1>
-        <h3 className="text-gray-300 text-center text-3xl mt-4">
-          Step Up. Stand Out. Be Active.
-        </h3>
-        <h2 className="text-center font-semibold text-4xl mt-4">
-          Dates:{" "}
-          <span className="font-extrabold">
-            November 10 - December 10, 2025
-          </span>
-        </h2>
-        <h2 className="text-center font-semibold text-4xl mt-4">
-          Venue: <span className="font-extrabold">TBC</span>
-        </h2>
-        <h4 className="text-gray-300 italic text-center font-extralight text-2xl mt-8">
-          Unmatched Unforgettable Experiences.
-        </h4>
+      <section className="text-white text-center">
+        <video src="/hero.mp4" autoPlay loop muted playsInline className=" h-full w-full object-cover object-center absolute -z-2"/>
+        <div className="absolute w-full h-full bg-black opacity-60 -z-1"/>
+        <div className="py-32 pb-20 flex flex-col justify-center items-center">
+          <h1 className="text-6xl font-bold text-center mt-24">
+            IGNITE&reg; Excellence
+          </h1>
+          <h3 className="text-gray-300 text-center font-bold text-4xl mt-4 font-sacramento">
+            Step Up. Stand Out. Be Active.
+          </h3>
+          <h2 className="text-center font-semibold text-4xl mt-4">
+            Dates:{" "}
+            <span className="font-extrabold">
+              November 10 - December 10, 2025
+            </span>
+          </h2>
+          <h2 className="text-center font-semibold text-4xl mt-4">
+            Venue: <span className="font-extrabold">TBC</span>
+          </h2>
+          <h4 className="text-gray-300 italic text-center font-extralight text-2xl mt-8">
+            Unmatched Unforgettable Experiences.
+          </h4>
+        </div>
       </section>
-    </>
   );
 };
 

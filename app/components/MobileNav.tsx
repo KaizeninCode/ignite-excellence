@@ -22,8 +22,10 @@ const MobileNav = () => {
           alt="IGNITE&reg; Excellence Logo"
           className="w-12 h-8"
         />
-        <h1 className="text-lg font-bold text-red-800">IGNITE&reg; Excellence</h1>
-        <div className="text-red-800 mr-6" onClick={toggleMenu}>
+        <h1 className="text-lg font-bold text-orange-500">
+          IGNITE&reg; Excellence
+        </h1>
+        <div className="text-orange-500 mr-6" onClick={toggleMenu}>
           {" "}
           &#9776;
         </div>

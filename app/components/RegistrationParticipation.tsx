@@ -3,8 +3,8 @@ import RegistrationForm from "./RegistrationForm";
 const RegistrationParticipation = () => {
   return (
     <section className="max-w-5xl lg:py-10 py-5 mx-auto" id="registration">
-      <h1 className="lg:text-6xl md:text-4xl text-2xl text-red-800 md:mb-8 mb-4 text-center">
-        Registration and Participation Fees
+      <h1 className="lg:text-6xl md:text-4xl text-2xl text-white w-fit mx-auto p-3 rounded-xl bg-orange-500 md:mb-8 mb-4 text-center">
+        Registration
       </h1>
       <p className="md:text-2xl text-lg max-md:px-4 font-light">
         In order to better understand the different fee options and how to

@@ -6,7 +6,7 @@ const RegistrationForm = () => {
     parentGuardianName: "",
     parentGuardianPhone: "",
     childName: "",
-    religion: "",
+    location: "",
     childAllergies: "",
     emergencyContactName: "",
     emergencyContactPhone: "",
@@ -33,7 +33,7 @@ const RegistrationForm = () => {
           parentGuardianName: "",
           parentGuardianPhone: "",
           childName: "",
-          religion: "",
+          location: "",
           childAllergies: "",
           emergencyContactName: "",
           emergencyContactPhone: "",
@@ -48,13 +48,18 @@ const RegistrationForm = () => {
     }
   };
   return (
-    <form className="shadow-xl rounded-xl p-8 mt-8 max-w-lg mx-auto" onSubmit={handleSubmit}>
+    <form
+      className="shadow-xl rounded-xl p-8 mt-8 max-w-lg mx-auto"
+      onSubmit={handleSubmit}
+    >
       {showToast && (
         <div className="fixed top-6 left-1/2 transform -translate-x-1/2 bg-green-600 text-white px-6 py-3 rounded-xl shadow-lg z-50 transition-all">
           Response recorded successfully!
         </div>
       )}
-      <h2 className="text-3xl text-red-800 mb-8">Register your child here</h2>
+      <h2 className="text-3xl text-orange-500 mb-8">
+        Register your child here
+      </h2>
       <div className="space-y-4">
         <div className="grid ">
           <label htmlFor="childName">Child's Name</label>
@@ -63,12 +68,33 @@ const RegistrationForm = () => {
             type="text"
             placeholder="Enter your child's full name"
             required={true}
-            className="border-b text-red-800 p-1"
+            className="border-b text-orange-500 p-1"
             onChange={(e) =>
               setFormState({ ...formState, childName: e.target.value })
             }
             value={formState.childName}
           />
+        </div>
+        <div className="grid ">
+          <label htmlFor="location">Preferred Location</label>
+          <select
+            id="location"
+            required={true}
+            className="border-b text-orange-500 p-1"
+            onChange={(e) =>
+              setFormState({ ...formState, location: e.target.value })
+            }
+            value={formState.location}
+          >
+            <option>-- Select your preferred location --</option>
+            <option>Westlands - Strathmore School</option>
+            <option>Ngong Road - CITAM Woodley School</option>
+            <option>Buruburu - DMI St. Joseph's International School</option>
+            <option>Rongai - Laiser Hill School</option>
+            <option>Kitengela - Acacia Crest Academy</option>
+            <option>Thika Road - Oakplace Hotel</option>
+            <option>Ngong Town - Mt. Olive School</option>
+          </select>
         </div>
         <div className="grid ">
           <label htmlFor="parentGuardianName">Parent/Guardian Name</label>
@@ -77,7 +103,7 @@ const RegistrationForm = () => {
             type="text"
             placeholder="Enter your full name"
             required={true}
-            className="border-b text-red-800  p-1"
+            className="border-b text-orange-500  p-1"
             onChange={(e) =>
               setFormState({ ...formState, parentGuardianName: e.target.value })
             }
@@ -91,7 +117,7 @@ const RegistrationForm = () => {
             type="phone"
             placeholder="07xx xxx xxx"
             required={true}
-            className="border-b text-red-800  p-1"
+            className="border-b text-orange-500  p-1"
             onChange={(e) =>
               setFormState({
                 ...formState,
@@ -103,27 +129,13 @@ const RegistrationForm = () => {
         </div>
 
         <div className="grid ">
-          <label htmlFor="religion">Religion</label>
-          <input
-            id="religion"
-            type="text"
-            placeholder="Christian, Muslim, etc."
-            required={true}
-            className="border-b text-red-800  p-1"
-            onChange={(e) =>
-              setFormState({ ...formState, religion: e.target.value })
-            }
-            value={formState.religion}
-          />
-        </div>
-        <div className="grid ">
           <label htmlFor="emergencyContact">Emergency Contact Name</label>
           <input
             id="emergencyConact"
             type="text"
             placeholder="Enter your emergency contact's full name"
             required={true}
-            className="border-b text-red-800  p-1"
+            className="border-b text-orange-500  p-1"
             onChange={(e) =>
               setFormState({
                 ...formState,
@@ -140,7 +152,7 @@ const RegistrationForm = () => {
             type="phone"
             placeholder="07xx xxx xxx"
             required={true}
-            className="border-b text-red-800 p-1"
+            className="border-b text-orange-500 p-1"
             onChange={(e) =>
               setFormState({
                 ...formState,
@@ -155,7 +167,7 @@ const RegistrationForm = () => {
           <textarea
             id="childAllergies"
             required={false}
-            className="border-b p-1 text-red-800"
+            className="border-b p-1 text-orange-500"
             onChange={(e) =>
               setFormState({ ...formState, childAllergies: e.target.value })
             }
@@ -163,12 +175,12 @@ const RegistrationForm = () => {
           />
         </div>
         <div className="w-full flex items-center justify-center">
-            <button
-              type="submit"
-              className="p-2 mt-4 mx-auto border rounded-xl transition duration-500 ease-in-out hover:bg-red-800 hover:text-white cursor-pointer"
-            >
-              Submit Response
-            </button>
+          <button
+            type="submit"
+            className="p-2 mt-4 mx-auto border rounded-xl transition duration-500 ease-in-out hover:bg-orange-500 hover:text-white cursor-pointer"
+          >
+            Submit Response
+          </button>
         </div>
       </div>
     </form>

@@ -1,4 +1,3 @@
-
 const OurMission = () => {
   const missionItems = [
     {
@@ -29,7 +28,9 @@ const OurMission = () => {
   ];
   return (
     <section className="max-w-5xl py-5 mx-auto" id="mission">
-      <h1 className="lg:text-7xl md:text-5xl text-3xl text-red-800 text-center">Our Mission</h1>
+      <h1 className="lg:text-7xl md:text-5xl text-3xl text-white w-fit mx-auto p-3 rounded-xl bg-orange-500">
+        Our Mission
+      </h1>
       <p className="md:text-2xl text-lg max-lg:px-4 font-light md:mt-8 mt-4">
         Our mission is to empower children to thrive, supporting their holistic
         development by providing a conducive environment to unwind, explore and
@@ -39,15 +40,16 @@ const OurMission = () => {
         aspects of the child. We do this through REACH. Every week we offer our
         REACH programme which includes activities in: <br />
         <br />
-        </p>
-        {missionItems.map((item, index) => (
-          <div className="mb-3 space-y-1 w-4/5 mx-auto md:text-2xl text-lg" key={index}>
-            <h2 className=" text-red-800 font-semibold">
-              {item.title}
-            </h2>
-            <p className="font-light">{item.description}</p>
-          </div>
-        ))}
+      </p>
+      {missionItems.map((item, index) => (
+        <div
+          className="mb-3 space-y-1 w-4/5 mx-auto md:text-2xl text-lg"
+          key={index}
+        >
+          <h2 className=" text-white w-fit p-2 rounded-xl bg-teal-700 font-semibold">{item.title}</h2>
+          <p className="font-light">{item.description}</p>
+        </div>
+      ))}
     </section>
   );
 };

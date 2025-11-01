@@ -1,4 +1,3 @@
-
 const CoreValues = () => {
   const coreValues = [
     {
@@ -29,16 +28,19 @@ const CoreValues = () => {
   ];
   return (
     <section className="max-w-5xl lg:py-10 py-5 mx-auto" id="values">
-      <h1 className="lg:text-7xl md:text-5xl text-3xl text-red-800 md:mb-8 mb-4 text-center">Our Core Values</h1>
+      <h1 className="lg:text-7xl md:text-5xl text-3xl text-white w-fit mx-auto p-3 rounded-xl bg-orange-500 md:mb-8 mb-4 text-center">
+        Our Core Values
+      </h1>
       <p className="md:text-2xl text-lg max-lg:px-4 font-light">
         Our code of conduct is designed to help us, as individuals, children and
         our staff team, make appropriate decisions about behavior choices and to
         demonstrate five core values:
         <br /> <br />
         {coreValues.map((value, index) => (
-          <span key={index}>
-            <strong className="text-red-800 mb-8">{value.title}:</strong> {value.description} <br /><br /> 
-          </span>
+          <div className="w-3/5 mx-auto mb-8" key={index}>
+            <h2 className="text-white w-fit mx-auto p-3 rounded-xl bg-teal-700 font-bold mb-2">{value.title}</h2>
+            <p>{value.description}</p>
+          </div>
         ))}
       </p>
     </section>
