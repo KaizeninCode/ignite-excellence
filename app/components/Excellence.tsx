@@ -1,8 +1,8 @@
 const Excellence = () => {
   return (
     <section className="max-w-5xl lg:py-10 py-5 mx-auto">
-      <h1 className="lg:text-7xl md:text-5xl text-3xl text-white w-fit mx-auto p-3 rounded-xl bg-orange-500 md:mb-8 mb-4 text-center">
-        Start your journey to excellence
+      <h1 className="lg:text-7xl md:text-5xl text-3xl text-white w-fit mx-auto p-3 rounded-xl bg-orange-500 md:mb-8 mb-4 lg:text-center">
+        Excellence
       </h1>
       <p className="md:text-2xl max-lg:px-4 font-light">
         In the journey to expand our reach and coverage each year, we open
