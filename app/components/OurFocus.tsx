@@ -28,7 +28,7 @@ const OurFocus = () => {
           <h1 className="lg:text-7xl md:text-5xl text-3xl text-white w-fit mx-auto p-3 rounded-xl bg-orange-500 mb-8">
             Our Focus
           </h1>
-          <div className="grid grid-cols-2 gap-8 p-4">
+          <div className="grid lg:grid-cols-2 gap-8 p-4">
             {focusItems.map((item, index) => (
               <div className="mb-3 space-y-2 max-lg:px-4" key={index}>
                 <h2 className="md:text-2xl text-lg text-white w-fit mx-auto p-3 rounded-xl bg-teal-700 font-bold">

@@ -37,7 +37,7 @@ const CoreValues = () => {
         demonstrate five core values:
         <br /> <br />
         {coreValues.map((value, index) => (
-          <div className="w-3/5 mx-auto mb-8" key={index}>
+          <div className="lg:w-3/5 w-4/5 mx-auto mb-8" key={index}>
             <h2 className="text-white w-fit mx-auto p-3 rounded-xl bg-teal-700 font-bold mb-2">{value.title}</h2>
             <p>{value.description}</p>
           </div>
