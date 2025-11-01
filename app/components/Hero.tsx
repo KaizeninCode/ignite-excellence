@@ -5,7 +5,7 @@ const Hero = () => {
       <section className="text-white text-center">
         <video src="/hero.mp4" autoPlay loop muted playsInline className=" h-full w-full object-cover object-center absolute -z-2"/>
         <div className="absolute w-full h-full bg-black opacity-60 -z-1"/>
-        <div className="lg:py-32 lg:pb-20 py-8 pb-5 flex flex-col justify-center items-center">
+        <div className="lg:py-32 py-8 pb-20 flex flex-col justify-center items-center">
           <h1 className="md:text-6xl text-4xl font-bold text-center mt-24">
             IGNITE&reg; Excellence
           </h1>
