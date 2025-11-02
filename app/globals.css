@@ -11,7 +11,7 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-jakarta-sans);
-  --font-sacramento: var(--font-gloria-hallelujah);
+  --font-gloria: var(--font-gloria-hallelujah);
 }
 
 /* @media (prefers-color-scheme: dark) {

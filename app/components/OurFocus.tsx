@@ -6,17 +6,17 @@ const OurFocus = () => {
         "We know that during school breaks, children can experience learning loss. Our holiday program helps maintain a level of academic engagement, preventing regression and allowing learners to continue building on their knowledge.",
     },
     {
-      title: "Skill development",
+      title: "Skill Development",
       description:
         "We offer activities that go beyond traditional classroom learning, fostering the development of various skills such as teamwork, creativity, and problem-solving.",
     },
     {
-      title: "Social interaction",
+      title: "Social Interaction",
       description:
         "Because holidays can be isolating for some children, participation in our programs allows them to socialize, make friends, and build positive relationships outside the school environment.",
     },
     {
-      title: "Physical activity",
+      title: "Physical Activity",
       description:
         "In our programs, sports and physical activities are central, promoting a healthy and active lifestyle among children.",
     },

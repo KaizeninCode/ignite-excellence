@@ -8,6 +8,7 @@ import CoreValues from './components/CoreValues'
 import RegistrationParticipation from './components/RegistrationParticipation'
 import MobileNav from './components/MobileNav'
 import Participation from './components/Participation'
+import Approach from './components/Approach'
 
 const Main = () => {
   return (
@@ -19,6 +20,7 @@ const Main = () => {
       <AboutUs/>
       <OurFocus/>
       <OurMission/>
+      <Approach/>
       <Excellence/>
       <CoreValues/>
       <Participation/>
