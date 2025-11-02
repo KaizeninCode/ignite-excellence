@@ -8,7 +8,7 @@ const Participation = () => {
       <div className="grid lg:grid-cols-3 max-lg:p-4 gap-8">
         <div className="relative h-128 rounded-xl">
           <img
-            src="/participation1.jpg"
+            src="/participation1.jpeg"
             alt=""
             className="object-cover w-full h-full rounded-xl"
           />
@@ -25,7 +25,7 @@ const Participation = () => {
         </div>
         <div className="relative h-128 rounded-xl">
           <img
-            src="/participation2.jpg"
+            src="/participation2.jpeg"
             alt=""
             className="object-cover w-full h-full rounded-xl"
           />
@@ -44,7 +44,7 @@ const Participation = () => {
         </div>
         <div className="relative h-128 rounded-xl">
           <img
-            src="/participation3.jpg"
+            src="/participation3.jpeg"
             alt=""
             className="object-cover w-full h-full rounded-xl"
           />
