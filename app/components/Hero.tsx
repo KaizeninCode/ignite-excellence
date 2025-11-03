@@ -2,7 +2,7 @@ import Header from "./Header";
 
 const Hero = () => {
   return (
-      <section className="text-white text-center">
+      <section className="text-white text-center flex items-center justify-center min-h-screen">
         <video src="/hero.mp4" autoPlay loop muted playsInline className=" h-full w-full object-cover object-center absolute -z-2"/>
         <div className="absolute w-full h-full bg-black opacity-60 -z-1"/>
         <div className="lg:py-32 py-16 lg:pb-20 pb-48 flex flex-col justify-center items-center">
