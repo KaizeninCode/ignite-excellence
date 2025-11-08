@@ -26,8 +26,7 @@ const RegistrationForm = () => {
           "Content-Type": "application/json",
         },
       });
-      const json = await res.json();
-      if (json.result === "success") {
+      await res.json();
         setStatus("");
         setFormState({
           parentGuardianName: "",
@@ -40,9 +39,7 @@ const RegistrationForm = () => {
         });
         setShowToast(true);
         setTimeout(() => setShowToast(false), 3000);
-      } else {
-        setStatus("Submission failed. Please try again.");
-      }
+      
     } catch (error) {
       setStatus("An error occurred. Please try again.");
     }
